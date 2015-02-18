@@ -12,9 +12,12 @@ This directory contains the necessary vagrant files to create a VM with Tuxedo i
     or (like for Windows host) 
 4b) Connect ssh using Putty to 127.0.0.1:2222 vagrant/vagrant
     or
-4b) Stop the VM guest, modify Vagrantfile to  
+4b) Stop the VM guest, modify Vagrantfile to
+
        vb.gui = true
+       
        vb.customize ["modifyvm", :id, "--vram", "16"]
+       
     and run "vagrant up" again.
 
 5)  login as vagrant/vagrant and run
